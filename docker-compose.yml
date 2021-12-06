@@ -1,0 +1,33 @@
+version: "3"
+services:
+  web:
+    container_name: phptsbp-web
+    build: "."
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ".:/docker"
+  db:
+    container_name: phptsbp-db
+    image: "mariadb:10.3"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: phptsbp
+      TZ: Asia/Tokyo
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./db-data:/var/lib/mysql"
+  pma:
+    container_name: phptsbp-pma
+    image: "phpmyadmin/phpmyadmin:5.0"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: password
+    ports:
+      - "8080:80"
+    depends_on:
+      - db

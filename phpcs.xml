@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset>
+    <file>init.php</file>
+    <file>app</file>
+    <file>webroot</file>
+
+    <arg name="extensions" value="php,inc"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <rule ref="PSR12"/>
+</ruleset>
