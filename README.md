@@ -1,6 +1,6 @@
 # php-ts-clean-boilerplate
 
-PHPとTypescriptによるクリーンなボイラープレート。中小規模サイト向け。
+PHPとTypeScriptによるクリーンなボイラープレート。中小規模サイト向け。
 
 ## ビルド
 
