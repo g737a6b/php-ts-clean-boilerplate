@@ -1,7 +1,6 @@
 {
     "require": {
         "g737a6b/php-r2-template": "^1",
-        "squizlabs/php_codesniffer": "^3.6",
         "symfony/dependency-injection": "^5.4",
         "symfony/validator": "^5.4"
     },
@@ -9,5 +8,8 @@
         "platform": {
             "php": "7.4.0"
         }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6"
     }
 }
