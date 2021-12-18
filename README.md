@@ -32,7 +32,7 @@ docker run -it --rm -v $(pwd):/app -w /app node:16 npm run watch
 docker-compose up -d
 
 # http://localhost
-# http://localhost/sample/page/
+# http://localhost/foo/bar/
 # http://localhost:8080
 ```
 

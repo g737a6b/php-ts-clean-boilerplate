@@ -2,6 +2,7 @@
 
 namespace App\UseCase;
 
+use App\Entity\Guest;
 use App\Presenter\SampleGreetInterface;
 
 class Sample implements SampleInterface
@@ -13,8 +14,23 @@ class Sample implements SampleInterface
         $this->greet = $greet;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function greet(string $name): void
     {
-        $this->greet->display($name);
+        $guest = new Guest($name);
+        if (!$guest->validate()) {
+            // display errors
+        }
+        $this->greet->display($guest->getName());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function exit(): void
+    {
+        exit;
     }
 }
