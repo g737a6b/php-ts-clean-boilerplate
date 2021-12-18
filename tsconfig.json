@@ -3,5 +3,11 @@
     "sourceMap": true,
     "target": "es5",
     "module": "es2015"
-  }
+  },
+  "include": [
+    "assets/js/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

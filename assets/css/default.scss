@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "_init";
+@import "_utilities";
+
+body {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}

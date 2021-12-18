@@ -1,16 +1,41 @@
 # php-ts-clean-boilerplate
 
-PHPとTypeScriptによるクリーンなボイラープレート。中小規模サイト向け。
+PHPとTypeScriptとSassによるクリーンなボイラープレート。中小規模サイト向け。
 
-## ビルド
+## 使い方
+
+空のディレクトリ PATH/TO/WORKPLACE にインストールする場合：
 
 ```sh
-docker-compose up -d
+mkdir PATH/TO/WORKPLACE && cd PATH/TO/WORKPLACE
+git clone git@github.com:g737a6b/php-ts-clean-boilerplate.git .
+rm -rf ./.git
+
+# 新たなバージョン管理を開始
+git init
+```
+
+## ビルド（ローカル）
+
+```sh
 docker run -it --rm -v $(pwd):/app composer:2.0 install
 docker run -it --rm -v $(pwd):/app -w /app node:16 npm i
 docker run -it --rm -v $(pwd):/app -w /app node:16 npm run build
+
+# ウォッチする場合
+docker run -it --rm -v $(pwd):/app -w /app node:16 npm run watch
+```
+
+## 起動（ローカル）
+
+```sh
+docker-compose up -d
+
+# http://localhost
+# http://localhost/foo/bar/
+# http://localhost:8080
 ```
 
 ## インフラ
 
-- AWS Lightsail bitnami LAMP環境を想定
+- AWS Lightsail bitnami LAMP環境に合わせてセットアップしています

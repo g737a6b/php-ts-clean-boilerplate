@@ -16,5 +16,20 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {"max": 1}
+    ],
+    "no-multi-spaces": [
+      "error"
+    ]
   }
 };
