@@ -2,13 +2,11 @@
 
 namespace App\Presenter;
 
-use R2Template\R2Template;
-
 class SampleGreet implements SampleGreetInterface
 {
     public $template;
 
-    function __construct(R2Template $template)
+    function __construct(object $template)
     {
         $this->template = $template;
     }
