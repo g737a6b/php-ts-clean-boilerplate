@@ -34,8 +34,11 @@ docker-compose up -d
 # http://localhost
 # http://localhost/foo/bar/
 # http://localhost:8080
+
+# 起動後、Jobの実行（ここではSampleJob）
+docker exec -it phptsbp-web php /docker/run-script.php SampleJob
 ```
 
-## インフラ
+## 動作環境
 
 - AWS Lightsail bitnami LAMP環境に合わせてセットアップしています

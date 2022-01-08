@@ -17,7 +17,7 @@ interface SampleInterface
     public function greet(string $name): void;
 
     /**
-     * 何もせず終了します
+     * サンプルコードのため何もせず終了します
      *
      * @return void
      */
