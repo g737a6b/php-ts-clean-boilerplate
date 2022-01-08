@@ -15,6 +15,6 @@ class SampleJob implements JobInterface
 
     public function main(): void
     {
-        $this->sample->exit();
+        $this->sample->greetInJapanese();
     }
 }

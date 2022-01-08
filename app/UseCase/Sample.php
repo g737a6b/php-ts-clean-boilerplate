@@ -29,8 +29,8 @@ class Sample implements SampleInterface
     /**
      * {@inheritDoc}
      */
-    public function exit(): void
+    public function greetInJapanese(): void
     {
-        exit;
+        $this->greet->echoInJapanese();
     }
 }

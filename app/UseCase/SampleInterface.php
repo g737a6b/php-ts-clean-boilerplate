@@ -17,9 +17,9 @@ interface SampleInterface
     public function greet(string $name): void;
 
     /**
-     * サンプルコードのため何もせず終了します
+     * 日本語で挨拶を行います
      *
      * @return void
      */
-    public function exit(): void;
+    public function greetInJapanese(): void;
 }
