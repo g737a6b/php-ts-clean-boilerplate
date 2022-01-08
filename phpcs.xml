@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <ruleset>
     <file>init.php</file>
+    <file>run-script.php</file>
     <file>app</file>
     <file>webroot</file>
 

@@ -11,9 +11,20 @@ class SampleGreet implements SampleGreetInterface
         $this->template = $template;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function display(string $name): void
     {
         $this->template->set("name", $name);
         $this->template->display("hello.php");
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function echoInJapanese(): void
+    {
+        echo "こんにちは" . PHP_EOL;
     }
 }
