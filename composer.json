@@ -10,6 +10,17 @@
         }
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.6"
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Entity\\": "app/Entity/",
+            "App\\External\\": "app/External/",
+            "App\\Job\\": "app/Job/",
+            "App\\Presenter\\": "app/Presenter/",
+            "App\\Repository\\": "app/Repository/",
+            "App\\UseCase\\": "app/UseCase/"
+        }
     }
 }

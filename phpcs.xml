@@ -3,6 +3,7 @@
     <file>init.php</file>
     <file>run-script.php</file>
     <file>app</file>
+    <file>tests</file>
     <file>webroot</file>
 
     <arg name="extensions" value="php,inc"/>
