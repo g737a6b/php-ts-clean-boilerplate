@@ -26,11 +26,8 @@ module.exports = {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
-          // CSSファイルとJSファイルを別々にする
-          MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
+          MiniCssExtractPlugin.loader, // CSSファイルとJSファイルを別々にする
           "css-loader",
-          // Compiles Sass to CSS
           "sass-loader",
         ],
       },

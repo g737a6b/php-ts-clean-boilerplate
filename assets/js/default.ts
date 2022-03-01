@@ -1,3 +1,4 @@
+import { logger } from "./logger";
+
 const v = 'hello';
-console.log(v);
-export {};
+logger(v);
