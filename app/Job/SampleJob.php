@@ -6,7 +6,7 @@ use App\UseCase\SampleInterface;
 
 class SampleJob implements JobInterface
 {
-    private $sample;
+    protected $sample;
 
     function __construct(SampleInterface $sample)
     {

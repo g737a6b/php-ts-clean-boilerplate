@@ -4,7 +4,7 @@ namespace App\Presenter;
 
 class SampleGreet implements SampleGreetInterface
 {
-    public $template;
+    protected $template;
 
     function __construct(object $template)
     {
