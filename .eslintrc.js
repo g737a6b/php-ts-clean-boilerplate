@@ -20,6 +20,10 @@ module.exports = {
       "error",
       "unix"
     ],
+    "indent": [
+      "error",
+      2
+    ],
     "semi": [
       "error",
       "always"

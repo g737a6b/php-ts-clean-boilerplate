@@ -7,7 +7,7 @@ use App\Presenter\SampleGreetInterface;
 
 class Sample implements SampleInterface
 {
-    public $greet;
+    protected $greet;
 
     function __construct(SampleGreetInterface $greet)
     {
