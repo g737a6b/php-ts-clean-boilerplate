@@ -39,4 +39,5 @@ module.exports = {
     }),
     new MiniCssExtractPlugin(),
   ],
+  target: ['web', 'es5'],
 };
